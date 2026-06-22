@@ -12,13 +12,13 @@ if (missingEnv.length > 0) {
 
 module.exports = {
   host: process.env.HOST || '0.0.0.0',
-  port: Number(process.env.PORT || 3000),
+  port: Number(process.env.PORT),
   db: {
-    host: process.env.DB_HOST || '127.0.0.1',
-    port: Number(process.env.DB_PORT || 3306),
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '',
-    database: process.env.DB_NAME || 'employees_db',
+    host: process.env.DB_HOST ,
+    port: Number(process.env.DB_PORT),
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,

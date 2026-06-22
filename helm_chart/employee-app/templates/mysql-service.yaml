@@ -8,8 +8,8 @@ spec:
   selector:
     app: mysql
 
-  ports:
-    - port: 3306
-      targetPort: 3306
+  clusterIP: None
 
-  type: ClusterIP
+  ports:
+    - port: {{ .Values.mysql.service.port }}
+      targetPort: {{ .Values.mysql.service.targetPort }}
