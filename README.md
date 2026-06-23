@@ -4,6 +4,12 @@
 
 Employees API is a containerized Express.js application backed by MySQL and deployed on Kubernetes using Helm. The solution includes auto-scaling, persistent storage, rolling updates, configuration management, and external access through NGINX Ingress.
 
+## Docker Hub Repo: https://hub.docker.com/repository/docker/ashutoshkumar0097/employees-api/general
+
+## API Url: http://35.231.79.130/employees
+
+
+
 ## Features
 
 * Express.js REST API
@@ -43,7 +49,7 @@ Persistent Volume (10Gi)
 ### Build Docker Image
 
 ```bash
-docker build -t employees-api:1.0 .
+docker build -t employees-api:1.3 .
 ```
 
 ### Deploy to Kubernetes
