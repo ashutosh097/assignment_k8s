@@ -8,6 +8,8 @@ Employees API is a containerized Express.js application backed by MySQL and depl
 
 ## API Url: http://35.231.79.130/employees
 
+## Github Repo: https://github.com/ashutosh097/assignment_k8s
+
 
 
 ## Features
@@ -123,7 +125,7 @@ strategy:
   type: RollingUpdate
   rollingUpdate:
     maxSurge: 1
-    maxUnavailable: 0
+    maxUnavailable: 1
 ```
 
 This configuration ensures zero-downtime deployments.
