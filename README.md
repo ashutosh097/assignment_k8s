@@ -128,7 +128,7 @@ strategy:
     maxUnavailable: 1
 ```
 
-This configuration ensures zero-downtime deployments.
+This configuration ensures near zero-downtime deployments.
 
 ---
 
