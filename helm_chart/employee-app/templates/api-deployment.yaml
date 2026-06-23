@@ -35,6 +35,8 @@ spec:
         - containerPort: {{ .Values.api.containerPort }}
 
         env:
+        - name: PORT
+          value: {{ .Values.api.containerPort | quote }}
 
         - name: DB_HOST
           valueFrom:
